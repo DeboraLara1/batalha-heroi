@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import styled from 'styled-components';
-import search from './../../img/search.svg'
+import search from './../../Assets/img/search.svg'
 
 
 const Contaneir = styled.div`
@@ -8,15 +8,14 @@ const Contaneir = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3);
-    grid-template-rows: 11vh 83vh 6vh; 
+    grid-template-rows: 11vh auto; 
 
     @media screen and (max-width:780px) {
         height: 100vh;
         width: 100%;
         display: grid;
-        
         grid-template-columns: auto ;
-        grid-template-rows: 9vh auto 6vh;
+        grid-template-rows: 9vh auto ;
     }
 
 `
@@ -28,7 +27,8 @@ const Header = styled.div`
 `
 
 const Main = styled.div`
-    background-color: pink;
+    padding: 25px;
+    background-color: #000000;
 `
 
 const Footer = styled.div`

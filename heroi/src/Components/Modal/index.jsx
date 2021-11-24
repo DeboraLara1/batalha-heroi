@@ -1,27 +1,17 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-import React, {useState} from "react";
+import React from "react";
 import Modal from 'react-modal'
 import Styled from './Styled-Modal'
 
 Modal.setAppElement('#root')
-export default ({batalha}) =>{
-
-    const [modalIsOpen, setModalIsOpen] = useState(false)
-
-    const handleOpenModal = () => {
-        setModalIsOpen(true)
-    }
-
-    const handleCloseModal = () => {
-        setModalIsOpen(false)
-    }
-
-
+export default ({batalha, modalIsOpen, handleOpenModal, handleCloseModal, winner}) =>{
+console.log('winner', winner)
     const customStyles = {
         content: {
           top: '50%',
           left: '50%',
+          background: '#000000ba',
           right: 'auto',
           bottom: 'auto',
           marginRight: '-50%',
@@ -30,7 +20,6 @@ export default ({batalha}) =>{
       };
     return(
         <div>
-            <button onClick={handleOpenModal}>Open Modal</button>
             <Modal
             isOpen={modalIsOpen}
             onAfterOpen={handleOpenModal}
@@ -38,7 +27,7 @@ export default ({batalha}) =>{
             style={customStyles}
             contentLabel="Example Modal">
                     
-            <Styled.H2>Vencedor {batalha.name}</Styled.H2>
+            <Styled.H2>Vencedor {winner}</Styled.H2>
             <Styled.WrapperHerois >
                     {batalha.map((getLisHero) => {
                         return(<>

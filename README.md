@@ -5,7 +5,7 @@ Ainda é possível o usuário selecionar 2 Meta-humano/ Heroi escolhido por ele 
 resultado será exibido em tela por meio de um card com as informações dos dois selecionados e o nome do vencedor.
 
 ## :page_with_curl: Sobre o projeto
-Este projeto foi desenvolvido com o objetivo de reproduzir e desenvolver um projeto onde é possivel visualizar informações dos Meta-humanos/ Herois de uma API, algumas funcionalidades.
+Este projeto foi desenvolvido com o objetivo de reproduzir e desenvolver um projeto onde é possivel visualizar informações dos Meta-humanos/ Herois de uma API RESTful, algumas funcionalidades.
 São elas: 
 ####  Listagem de heróis 
  - Exibir a imagem e nome de cada Meta-humanos/ Herois que possui na API.

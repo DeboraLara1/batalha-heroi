@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# :open_file_folder: Batalha de Herois
+O desafio deste projeto consiste em apresentar uma lista de diversos Meta-humanos/ Herois além do usuário poder realizar uma pesquisa com o nome do Meta-humano/ Heroi que procura.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ainda é possível o usuário selecionar 2 Meta-humano/ Heroi escolhido por ele para fazer uma comparação de qual dos dois escolhidos possui os poderes mais fortes, o 
+resultado será exibido em tela por meio de um card com as informações dos dois selecionados e o nome do vencedor.
 
-## Available Scripts
+## :page_with_curl: Sobre o projeto
+Este projeto foi desenvolvido com o objetivo de reproduzir e desenvolver um projeto onde é possivel visualizar informações dos Meta-humanos/ Herois de uma API, algumas funcionalidades.
+São elas: 
+####  Listagem de heróis 
+ - Exibir a imagem e nome de cada Meta-humanos/ Herois que possui na API.
 
-In the project directory, you can run:
+####  Filtro por busca com entrada de dados
+ - Permitir o usuário pesquisar por um Meta-humanos/ Herois por meio de um campo onde é possivel digitar o nome do heroi que busca.
 
-### `yarn start`
+ 
+ 
+## :rocket: Tecnologias usadas
+ 
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+ 
+#### Frontend
+* JavaScript | JSX
+* Biblioteca React
+* Styled-components
+* CSS
+* HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :computer: Intalação do projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pré-requisitos
+- React 17.0.2
+- Npm/ Yarn
+- Nodejs
 
-### `yarn test`
+## Passo a passo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1 - Clone este repositório;
+<br /> `git clone https://github.com/DeboraLara1/batalha-heroi.git`
+<br /> <br />
+2 - Entre na pasta do projeto
+<br /> `cd ./heroi`
+<br /> <br />
+3 - Instalar pacote de dependências para fazer build do projeto;
+<br /> `npm install`
+<br /> <br />
+4 - Executar/subir projeto;
+<br /> `npm start`

@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import Styled from './Styled.jsx'
 
-import Card from '../../Components/Card'
+import Cards from '../../Components/Card'
 import Modal from '../../Components/Modal'
 import ListAPI from './../../Service/Api-MetaHumanos/MetaHumano.jsx';
 
@@ -113,7 +113,7 @@ export default () => {
             </Styled.Header>
             <Styled.Main>
                 <Modal batalha={batalha} modalIsOpen={modalIsOpen} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} winner={winner}/>
-                <Card dataHeroList={filtroHero}  handleHeroClick={handleHeroClick} handleOpenModal={handleOpenModal}/>
+                <Cards dataHeroList={filtroHero}  handleHeroClick={handleHeroClick} handleOpenModal={handleOpenModal}/>
             </Styled.Main>
         </Styled.Contaneir>
         

@@ -11,7 +11,7 @@ console.log('winner', winner)
         content: {
           top: '50%',
           left: '50%',
-          background: '#000000ba',
+          background: '#0d0c0ce6',
           right: 'auto',
           bottom: 'auto',
           marginRight: '-50%',
@@ -29,7 +29,23 @@ console.log('winner', winner)
                     
             <Styled.H2>Vencedor {winner}</Styled.H2>
             <Styled.WrapperHerois >
-                    {batalha.map((getLisHero) => {
+                    {batalha.map((getLisHero, i) => {
+                        if(i === 1){
+                            return(<>
+                                <Styled.Batalha>
+                                    <Styled.Comparação>
+                                        <Styled.P> Intelligence {getLisHero.powerstats.intelligence}</Styled.P>
+                                        <Styled.P> Strength {getLisHero.powerstats.strength} </Styled.P>
+                                        <Styled.P> Speed {getLisHero.powerstats.speed} </Styled.P>
+                                        <Styled.P> Durability {getLisHero.powerstats.durability} </Styled.P>
+                                        <Styled.P> Power {getLisHero.powerstats.power} </Styled.P>
+                                        <Styled.P> Combat {getLisHero.powerstats.combat} </Styled.P>
+                                    </Styled.Comparação>
+                                    <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />
+                                </Styled.Batalha>
+                                </>
+                            )
+                        } 
                         return(<>
                             <Styled.Batalha>
                                 <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />

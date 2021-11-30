@@ -1,8 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-
 import React from "react";
 import Modal from 'react-modal'
 import Styled from './Styled-Modal'
+import escudo from './../../Assets/img/batalha.png'
 
 Modal.setAppElement('#root')
 export default ({batalha, modalIsOpen, handleOpenModal, handleCloseModal, winner}) =>{
@@ -28,7 +28,7 @@ console.log('winner', winner)
             contentLabel="Example Modal">
                     
             <Styled.H2>Vencedor {winner}</Styled.H2>
-            <Styled.WrapperHerois >
+                <Styled.WrapperHerois >
                     {batalha.map((getLisHero, i) => {
                         if(i === 1){
                             return(<>
@@ -39,7 +39,7 @@ console.log('winner', winner)
                                         <Styled.P> Speed {getLisHero.powerstats.speed} </Styled.P>
                                         <Styled.P> Durability {getLisHero.powerstats.durability} </Styled.P>
                                         <Styled.P> Power {getLisHero.powerstats.power} </Styled.P>
-                                        <Styled.P> Combat {getLisHero.powerstats.combat} </Styled.P>
+                                        <Styled.P> Combat{getLisHero.powerstats.combat} </Styled.P>
                                     </Styled.Comparação>
                                     <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />
                                 </Styled.Batalha>
@@ -60,7 +60,7 @@ console.log('winner', winner)
                             </Styled.Batalha>
                             </>
                         )})}
-                
+                         <Styled.ImagemEscudo src={escudo} alt="imagem batalha" />            
                 </Styled.WrapperHerois>
             </Modal>
         </div>

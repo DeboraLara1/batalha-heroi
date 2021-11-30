@@ -4,7 +4,6 @@ const H2 = styled.h2`
     display: grid;
     justify-items: center;  
     color: #ffffff;
-
 `
 
 const WrapperHerois = styled.div`
@@ -16,6 +15,7 @@ const Batalha = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     justify-items: center;
+    padding-left: 1.5rem;
 
     @media screen and (max-width:630px) {
 
@@ -44,11 +44,19 @@ const P = styled.p `
     }
 `
 
+const ImagemEscudo = styled.img `
+    max-width: 40px;
+    max-width: 40px;
+    position: fixed;
+    left: 22rem;
+    top: 11.5rem;
+`
 
 export default{
     H2,
     WrapperHerois,
     Batalha,
     Comparação,
-    P
+    P,
+    ImagemEscudo
 }

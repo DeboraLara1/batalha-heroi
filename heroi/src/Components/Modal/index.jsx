@@ -32,14 +32,17 @@ console.log('winner', winner)
                     {batalha.map((getLisHero, i) => {
                         if(i === 1){
                             return(<>
+                                <Styled.NameHero right> {getLisHero.name} </Styled.NameHero>
+
                                 <Styled.Batalha>
+                                    
                                     <Styled.Comparação>
                                         <Styled.P> Intelligence {getLisHero.powerstats.intelligence}</Styled.P>
                                         <Styled.P> Strength {getLisHero.powerstats.strength} </Styled.P>
                                         <Styled.P> Speed {getLisHero.powerstats.speed} </Styled.P>
                                         <Styled.P> Durability {getLisHero.powerstats.durability} </Styled.P>
                                         <Styled.P> Power {getLisHero.powerstats.power} </Styled.P>
-                                        <Styled.P> Combat{getLisHero.powerstats.combat} </Styled.P>
+                                        <Styled.P> Combat {getLisHero.powerstats.combat} </Styled.P>
                                     </Styled.Comparação>
                                     <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />
                                 </Styled.Batalha>
@@ -47,6 +50,8 @@ console.log('winner', winner)
                             )
                         } 
                         return(<>
+                            <Styled.NameHero left> {getLisHero.name} </Styled.NameHero>
+                            
                             <Styled.Batalha>
                                 <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />
                                 <Styled.Comparação>

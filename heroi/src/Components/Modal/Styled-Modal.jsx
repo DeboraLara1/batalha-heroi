@@ -4,16 +4,17 @@ const H2 = styled.h2`
     display: grid;
     justify-items: center;  
     color: #ffffff;
+    margin-bottom: 4.5rem;
 `
 
 const WrapperHerois = styled.div`
    display: grid;
-   grid-template-columns: repeat(2,1fr);
+   grid-template-columns: repeat(2,2fr);
 `
 
 const Batalha = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 3fr);
     justify-items: center;
     padding-left: 1.5rem;
 
@@ -48,8 +49,17 @@ const ImagemEscudo = styled.img `
     max-width: 40px;
     max-width: 40px;
     position: fixed;
-    left: 22rem;
-    top: 11.5rem;
+    left: 41.5%;
+    top: 51%;
+`
+
+const NameHero = styled.h4 `
+    position: fixed;
+    left: ${props => props.left ? '51px' : 'none'};
+    right: ${props => props.right ? '13rem' : 'none'};
+    top: 3.5rem;
+    color: white;
+    font-size: 23px;
 `
 
 export default{
@@ -58,5 +68,6 @@ export default{
     Batalha,
     Comparação,
     P,
-    ImagemEscudo
+    ImagemEscudo,
+    NameHero
 }

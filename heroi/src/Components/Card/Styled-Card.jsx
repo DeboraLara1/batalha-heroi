@@ -9,11 +9,10 @@ const Row = styled.div`
     grid-template-columns: repeat(4, 1fr);
     justify-items: baseline;
     @media screen and (max-width:1200px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     @media screen and (max-width: 600px) {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
+        grid-template-columns: repeat(2, 2fr);
     }
     
 `
@@ -31,15 +30,32 @@ const ContainerImg = styled.div`
     flex-wrap: nowrap;
     align-items: center;
 
-    @media screen and (max-width: 600px) {
-        grid-template-columns: repeat(1, 1fr);
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(2, 2fr);
         justify-items: center;
+        img{
+            min-width: 5rem; 
+            margin-right:3px;
+
+        }
     }
+    @media screen and (max-width:1200px) {
+        img{
+            min-width: 6rem; 
+            margin-right:2px;
+
+        }
+    }
+    
 `
 
 const H3 = styled.h4`
     color: #ffffff;
     padding-left: 15px;
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+        padding-left:0;
+    }
 `
 
 

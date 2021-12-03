@@ -1,12 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import Modal from 'react-modal'
-import Styled from './Styled-Modal'
-import escudo from './../../Assets/img/batalha.png'
+import Modal from 'react-modal';
+import Styled from './Styled-Modal';
+import escudo from './../../Assets/img/batalha.png';
 
 Modal.setAppElement('#root')
 export default ({batalha, modalIsOpen, handleOpenModal, handleCloseModal, winner}) =>{
-console.log('winner', winner)
+
     const customStyles = {
         content: {
           top: '50%',
@@ -17,7 +17,8 @@ console.log('winner', winner)
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
         },
-      };
+    }; 
+
     return(
         <div>
             <Modal
@@ -34,9 +35,9 @@ console.log('winner', winner)
                             return(<>
                                 <Styled.NameHero right> {getLisHero.name} </Styled.NameHero>
 
-                                <Styled.Batalha>
+                                <Styled.Batalha >
                                     
-                                    <Styled.Comparação>
+                                    <Styled.Comparação marginLeft>
                                         <Styled.P> Intelligence {getLisHero.powerstats.intelligence}</Styled.P>
                                         <Styled.P> Strength {getLisHero.powerstats.strength} </Styled.P>
                                         <Styled.P> Speed {getLisHero.powerstats.speed} </Styled.P>
@@ -50,11 +51,11 @@ console.log('winner', winner)
                             )
                         } 
                         return(<>
-                            <Styled.NameHero left> {getLisHero.name} </Styled.NameHero>
+                            <Styled.NameHero left > {getLisHero.name} </Styled.NameHero>
                             
-                            <Styled.Batalha>
+                            <Styled.Batalha >
                                 <img  src={getLisHero.images.sm} alt={`Imagem do Meta Humano ${getLisHero.name}`} />
-                                <Styled.Comparação>
+                                <Styled.Comparação marginRight>
                                     <Styled.P> {getLisHero.powerstats.intelligence} Intelligence</Styled.P>
                                     <Styled.P> {getLisHero.powerstats.strength} Strength</Styled.P>
                                     <Styled.P> {getLisHero.powerstats.speed} Speed</Styled.P>
